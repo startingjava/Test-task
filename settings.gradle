@@ -1,0 +1,13 @@
+rootProject.name = 'test-task-parent'
+
+include ':test-task-api'
+include ':spring-boot-config'
+include 'test-task-dataaccess'
+
+
+project(':test-task-api').projectDir = "$rootDir/test-task-api" as File
+project(':spring-boot-config').projectDir = "$rootDir/spring-boot-config" as File
+project(':test-task-dataaccess').projectDir = "$rootDir/test-task-dataaccess" as File
+
+
+
